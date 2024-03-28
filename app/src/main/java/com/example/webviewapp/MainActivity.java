@@ -30,10 +30,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         myWebView = findViewById(R.id.my_webview);
-        myWebView.setWebViewClient(new WebViewClient()); // Do not open in Chrome!
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.loadUrl("https://wwwlab.webug.se/mobdesign/a23thefo/");
+
 
         /*
         * Rename your App. Tip: Values->Strings
@@ -77,12 +76,12 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_external_web) {
-            Log.d("==>","Will display external web page");
+            myWebView.loadUrl("https://www.his.se/en");
             return true;
         }
 
         if (id == R.id.action_internal_web) {
-            Log.d("==>","Will display internal web page");
+            myWebView.loadUrl("file:///android_asset/index.html");
             return true;
         }
 
