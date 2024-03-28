@@ -1,0 +1,122 @@
+#swipe-page1{background:#fed;left:0%;}
+#swipe-page2{background:#def;}
+#swipe-page3{background:#fde;}
+
+.swipe-page{position:absolute;left:100%;top:0%;width:100%;height:100%;z-index:500;}  
+
+.clicker{position:absolute;left:0px;width:100%;top:35%;height:30%;z-index:600;border:1px dotted orange;box-sizing: border-box;display:flex;justify-content:space-between;align-items:center;}
+.leftclicker{font-size:160px;}
+.rightclicker{font-size:160px;}
+
+@keyframes inleft {0% { left: -100%; } 100% { left: 0%;} }    
+@keyframes inright {0% { left: 100%; } 100% { left: 0%;} }    
+@keyframes outleft {0% { left: 0%; } 100% { left: -100%;} }    
+@keyframes outright {0% { left: 0%; } 100% { left: 100%;} }  
+
+
+
+.color1{
+    transition: 2s;
+    background-color: grey;
+}
+.color2{
+    transition: 2s;
+    background-color: red;
+}
+.color3{
+    transition: 2s;
+    background-color: rgb(122, 15, 97);
+}
+.color4{
+    transition: 2s;
+    background-color: peachpuff;
+    
+}
+.color5{
+    transition: 2s;
+    background-color: rgb(147, 95, 12);
+}
+.color6{
+    transition: 2s;
+    background-color: #fde;
+}
+.color7{
+    transition: 2s;
+    background-color: lightskyblue;
+}
+.green{
+    
+    background-image: url("Images/Goblin\ Skool.png");
+}
+.angry{
+    transition: 2s;
+    background-image: url("Images/Goblin\ Angy\ Skool.png");
+}
+#editor{
+    grid-column: 1;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1280px){
+    h1{
+        font-size: 64px;
+    }
+    #test{
+        font-size: 28px;
+    }
+    #background{
+        padding:1em;
+    }
+    #container{
+        display:grid;
+        grid-template-columns: 50vw 50vw;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1280px){
+    h1{
+        font-size: 24;
+    }
+    #test{
+        font-size: 16px;
+    }
+    #background{
+        padding:0em;
+    }
+    #container{
+        display:grid;
+        grid-template-columns: 40vw 60vw;
+    }
+}
+@media screen and (max-width: 375px){
+    h1{
+        font-size: 32px;
+    }
+    #test{
+        font-size: 28px;
+    }
+    #background{
+        padding:1em;
+    }
+    #container{
+        display:grid;
+        grid-template-columns: 100vw;
+    }
+}
+#test{
+    border-radius: 20px;
+    margin:auto;
+    background-color: rgb(255, 211, 154);
+    color: rgb(106, 2, 2);
+    padding:1em;
+    font-family:'Times New Roman', Times, serif;
+}
+#Background{
+    margin:auto;
+    width: 40vw;
+    height: 10vh;
+    text-align: center;
+    color: black;
+}
+
+
